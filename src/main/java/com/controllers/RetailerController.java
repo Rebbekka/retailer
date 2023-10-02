@@ -1,7 +1,7 @@
 package com.controllers;
 
 import com.model.response.RewardsPointsResponse;
-import com.service.RewardsServiceImpl;
+import com.service.RewardsService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -36,7 +36,7 @@ public class RetailerController {
   @ResponseBody
   public ResponseEntity<RewardsPointsResponse> getPoints(@PathVariable String id) {
     System.out.println("getting report for customer ID: " + id);
-    RewardsServiceImpl rewardsService = new RewardsServiceImpl();
+    RewardsService rewardsService = new RewardsService();
     RewardsPointsResponse rewardsPoints = rewardsService.getRewardsPoints(id);
     return ResponseEntity.ok(rewardsPoints);
   }
