@@ -1,6 +1,7 @@
 # retailer
 homework assignment
 
+About Me:
 Experienced in leading development work across multiple platforms, 
 and multiple coding languages, while engaging in problem solving 
 to deliver quality code and delight my customers.
